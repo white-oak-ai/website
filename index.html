@@ -104,6 +104,14 @@
                       border-radius: 100px; border: 1.5px solid rgba(253,252,250,0.3);
                       color: rgba(253,252,250,0.8); font-size: 15px; font-weight: 400; transition: all 0.2s; }
     .btn-outline-lt:hover { border-color: rgba(253,252,250,0.8); color: var(--cream); }
+
+    .hero-guide-link {
+      display: inline-flex; align-items: center; gap: 7px; margin-top: 20px;
+      font-size: 13px; color: rgba(253,252,250,0.5);
+      transition: color 0.2s;
+    }
+    .hero-guide-link:hover { color: rgba(253,252,250,0.85); }
+    .hero-guide-link svg { flex-shrink: 0; }
     .hero-visual { display: flex; align-items: center; justify-content: center; }
     .hero-leaf-wrap { position: relative; width: 260px; height: 350px;
                       display: flex; align-items: center; justify-content: center; }
@@ -344,6 +352,10 @@
             <a href="#contact" class="btn-primary">Let's talk →</a>
             <a href="#help" class="btn-outline-lt">See how it works</a>
           </div>
+          <a href="white-oak-ai-prompting-guide.pdf" download class="hero-guide-link fade fade-d4">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Free guide: How to talk to Claude (PDF)
+          </a>
         </div>
         <div class="hero-visual" aria-hidden="true">
           <div class="hero-leaf-wrap">
