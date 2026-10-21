@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apps &amp; Projects | White Oak AI</title>
+  <meta name="description" content="The apps, sites and projects White Oak AI has built and is building, from iPhone apps to web tools for teams.">
+  <meta property="og:title" content="Apps &amp; Projects | White Oak AI">
+  <meta property="og:description" content="The apps, sites and projects White Oak AI has built and is building, from iPhone apps to web tools for teams.">
+  <link rel="canonical" href="https://white-oak-ai.com/projects/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/localspots/style.css">
+  <style>
+    .project { display: flex; flex-direction: column; }
+    .project .kind { font-size: 11px; font-weight: 500; letter-spacing: 2px; text-transform: uppercase;
+                     color: var(--bark); margin-bottom: 10px; }
+    .project p { flex: 1; }
+    .status { display: inline-block; align-self: flex-start; margin-bottom: 14px; padding: 3px 10px;
+              border-radius: 100px; font-size: 12px; font-weight: 500; }
+    .status.live { background: rgba(46,107,126,0.12); color: var(--tidal); }
+    .status.soon { background: rgba(139,98,64,0.12); color: var(--bark); }
+    .status.dev  { background: rgba(30,58,47,0.08); color: rgba(30,58,47,0.75); }
+    .project-links { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-top: 18px; font-size: 14px; }
+    .project-links a { color: var(--tidal); font-weight: 500; }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="wrap nav-inner">
+      <a href="/" class="nav-logo" aria-label="White Oak AI home">
+        <svg width="28" height="36" viewBox="0 0 52 70" fill="none" aria-hidden="true">
+          <path d="M26 3 C36 0,49 11,50 23 C51 32,46 40,40 44 C48 50,52 60,46 66 C42 70,34 70,26 68 C18 70,10 70,6 66 C0 60,4 50,12 44 C6 40,1 32,2 23 C3 11,16 0,26 3Z" fill="#1E3A2F"/>
+          <line x1="26" y1="5" x2="26" y2="65" stroke="#2E6B7E" stroke-width="1.5" stroke-opacity="0.5"/>
+        </svg>
+        <div>
+          <div class="nav-wordmark">White Oak AI</div>
+          <div class="nav-city">Swansboro, NC</div>
+        </div>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="#apps" class="hide-sm">Apps</a></li>
+        <li><a href="#sites" class="hide-sm">Sites</a></li>
+        <li><a href="#labs" class="hide-sm">In the workshop</a></li>
+        <li><a href="/">&larr; White Oak AI</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="wrap">
+      <div class="eyebrow">Apps &amp; Projects</div>
+      <h1>Things I&rsquo;ve built, and what I&rsquo;m building.</h1>
+      <p class="lede">Alongside helping local businesses, I build small, useful software of my own: iPhone apps, web tools and client sites. Here&rsquo;s everything that&rsquo;s live or on the way.</p>
+    </div>
+  </header>
+
+  <section class="section" id="apps">
+    <div class="wrap">
+      <div class="eyebrow">Apps</div>
+      <h2>Apps you can use.</h2>
+      <p class="sub">Each one does one job well, and keeps your data to itself.</p>
+      <div class="grid">
+        <article class="card project">
+          <div class="kind">iPhone app</div>
+          <span class="status soon">Coming soon</span>
+          <h3>LocalSpots AI</h3>
+          <p>Save the restaurants, shops and hidden gems you find on Instagram, TikTok, Facebook and Maps, then get a nudge when you&rsquo;re nearby. On-device AI finds the place; no account, no ads.</p>
+          <div class="project-links">
+            <a href="/localspots/">Learn more &rarr;</a>
+            <a href="/localspots/privacy/">Privacy</a>
+            <a href="/localspots/support/">Support</a>
+          </div>
+        </article>
+        <article class="card project">
+          <div class="kind">iPhone &amp; web app</div>
+          <span class="status live">Live on the web</span>
+          <h3>DoseWise</h3>
+          <p>A calculator and log for peptide mixes and doses: track vials and expiry dates, convert doses to syringe units, and rotate injection sites. The iPhone app keeps everything on your device; the web app can sync if you sign in.</p>
+          <div class="project-links">
+            <a href="https://dosewise.white-oak-ai.com">Open DoseWise &rarr;</a>
+            <a href="/dosewise/privacy/">Privacy</a>
+          </div>
+        </article>
+        <article class="card project">
+          <div class="kind">Web app for teams</div>
+          <span class="status live">Live</span>
+          <h3>Planning Poker Table</h3>
+          <p>Planning poker for software teams. Add stories, everyone picks a card in secret, reveal together and save the estimate. Invite teammates with a link, with live updates and a round timer.</p>
+          <div class="project-links">
+            <a href="https://poker.white-oak-ai.com">Open Planning Poker &rarr;</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" id="sites">
+    <div class="wrap">
+      <div class="eyebrow">Sites</div>
+      <h2>Websites.</h2>
+      <p class="sub">Fast, simple sites for small businesses, built and hosted without the monthly page-builder bill.</p>
+      <div class="grid">
+        <article class="card project">
+          <div class="kind">This site</div>
+          <span class="status live">Live</span>
+          <h3>White Oak AI</h3>
+          <p>The home of White Oak AI&rsquo;s consulting work, including a built-in AI assistant you can chat with and a free guide to getting more out of Claude.</p>
+          <div class="project-links">
+            <a href="/">Visit &rarr;</a>
+            <a href="/white-oak-ai-prompting-guide.pdf" download>Free prompting guide (PDF)</a>
+          </div>
+        </article>
+        <article class="card project">
+          <div class="kind">Client site</div>
+          <span class="status dev">In progress</span>
+          <h3>Keel &amp; Compass Behavioral Consulting</h3>
+          <p>A marketing site for a behavioral health consulting practice: services, background and a contact form that lands straight in the owner&rsquo;s inbox.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="labs">
+    <div class="wrap">
+      <div class="eyebrow">In the workshop</div>
+      <h2>Early experiments.</h2>
+      <p class="sub">Projects that aren&rsquo;t ready for the public yet.</p>
+      <div class="grid">
+        <article class="card project">
+          <div class="kind">Coastal tools</div>
+          <span class="status dev">In development</span>
+          <h3>TideTracking</h3>
+          <p>A set of tools for tracking and understanding tides on the Crystal Coast, starting with a tide-prediction service that future apps will build on.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="wrap" style="text-align:center">
+      <h2>Want something like this for your business?</h2>
+      <p class="sub" style="margin:0 auto">I build small, focused tools and sites for Crystal Coast businesses. Tell me what&rsquo;s eating your time.</p>
+      <a class="btn" href="mailto:hello@white-oak-ai.com?subject=Project%20idea">hello@white-oak-ai.com</a>
+    </div>
+  </section>
+
+  <footer>
+    <div>
+      <a href="/">White Oak AI</a> ·
+      <a href="/projects/">Apps &amp; Projects</a> ·
+      <a href="/localspots/">LocalSpots AI</a> ·
+      <a href="mailto:hello@white-oak-ai.com">hello@white-oak-ai.com</a>
+    </div>
+    <div class="fine">&copy; 2026 White Oak AI · Swansboro, NC.</div>
+  </footer>
+</body>
+</html>
