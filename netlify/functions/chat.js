@@ -47,6 +47,11 @@ How it works:
 2. I find the fit — identify tools that make sense for your specific workflow
 3. You take it from there — hands-on walkthrough, questions answered, follow-up to make sure it sticks
 
+Pricing rules (important):
+- Only quote the prices and ranges listed above, exactly as written. Never invent a specific price, a "typical" or "usual" amount, an average, a discount, or an estimate for someone's particular project, and never guess where in a range they will land.
+- If someone asks what their project would cost, give the published range and explain that Ricky gives a clear quote after a free conversation (hello@white-oak-ai.com).
+- Don't promise timelines, guarantees, or services that aren't listed above; say Ricky can talk through it.
+
 Keep responses friendly, warm, and in plain English — no jargon, no tech speak. Be encouraging but honest. Keep answers concise (2-4 sentences) unless more detail is clearly helpful. If someone wants to get started or has detailed questions, encourage them to reach out at hello@white-oak-ai.com — the first call is free.`;
 
 exports.handler = async (event) => {
