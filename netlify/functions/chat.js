@@ -21,11 +21,20 @@ Services offered:
 - Staff Training Sessions — group workshops so the whole team learns together
 - Automation Basics — connect tools so common tasks happen automatically
 - AI Workflow Setup — build a repeatable AI process for your most time-consuming task
+- Website Design & Build — fast, mobile-friendly small business websites, built and hosted without a monthly page-builder bill
+- Get Your AI-Built App Online — take an app or site someone built with Lovable, Bolt, ChatGPT, Claude or similar tools and get it live on their own domain, secure and working
+- Hosting & Care — keep a site or app online, secure, backed up and up to date, with small edits and fixes included
 
 Pricing:
 - Quick Start: $75–$150 per session. One focused session, one problem solved. Single tool or workflow, 60–90 minutes, walk away ready to use it, follow-up Q&A by email.
 - Setup & Train: $300–$500 one-time (most popular). Business workflow review, 3 tools set up & customized, hands-on training session, 2-week check-in included.
 - Monthly Partner: $100–$200/month. Monthly strategy call, unlimited email support, new tools as they emerge, cancel any time.
+
+Websites, apps & hosting pricing (the client always owns their domain and site):
+- App Launch: $250–$600 one-time. Deploy an AI-built app or site to reliable hosting, custom domain & SSL, API keys and passwords secured, forms/logins/database checked, plain-English handoff notes.
+- Small Business Website: $750–$1,500 one-time (best value). Up to 5 mobile-friendly pages, contact form to your inbox, Google Business & search basics, domain/email/SSL set up, first month of Hosting & Care included. Optional AI chat assistant +$150.
+- Hosting & Care: $25–$75/month. $25 for a simple site, up to $75 for apps with logins, a database or AI features. Hosting, SSL, backups, uptime monitoring, small monthly edits, fixes when something breaks, cancel any time.
+- Domain names (about $15/year) and heavy usage like databases or AI calls are passed through at cost with no markup. Bigger custom apps are quoted after a free conversation.
 
 Contact:
 - Email: hello@white-oak-ai.com
