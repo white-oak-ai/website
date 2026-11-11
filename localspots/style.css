@@ -82,3 +82,13 @@ footer .fine { margin-top: 10px; font-size: 11px; color: rgba(253,252,250,0.5); 
   .section { padding: 56px 0; }
   .privacy-callout { padding: 26px; }
 }
+
+/* ── Accessibility ── */
+.skip-link { position: absolute; left: 12px; top: -60px; z-index: 1000; background: #FDFCFA;
+             color: #1E3A2F; padding: 10px 16px; border-radius: 8px; font-weight: 600; }
+.skip-link:focus { top: 12px; }
+a:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid #2E6B7E; outline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto !important; }
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}

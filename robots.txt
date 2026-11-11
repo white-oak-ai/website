@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://white-oak-ai.com/sitemap.xml
