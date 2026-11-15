@@ -55,25 +55,52 @@ Pricing rules (important):
 
 Keep responses friendly, warm, and in plain English — no jargon, no tech speak. Be encouraging but honest. Keep answers concise (2-4 sentences) unless more detail is clearly helpful. If someone wants to get started or has detailed questions, encourage them to reach out at hello@white-oak-ai.com — the first call is free.`;
 
+const ALLOWED_ORIGINS = ['https://white-oak-ai.com', 'https://www.white-oak-ai.com'];
+const MAX_USER_CHARS = 1000;
+const MAX_ASSISTANT_CHARS = 4000; // replies can run longer than user input
+
+function isAllowedOrigin(origin) {
+  if (!origin) return false;
+  if (ALLOWED_ORIGINS.includes(origin)) return true;
+  // Netlify deploy previews for this site
+  return /^https:\/\/[a-z0-9-]+\.netlify\.app$/.test(origin);
+}
+
 exports.handler = async (event) => {
+  const origin = (event.headers && (event.headers.origin || event.headers.Origin)) || '';
+  const allowed = isAllowedOrigin(origin);
   const headers = {
-    'Access-Control-Allow-Origin': '*',
+    'Access-Control-Allow-Origin': allowed ? origin : ALLOWED_ORIGINS[0],
     'Access-Control-Allow-Headers': 'Content-Type',
+    'Vary': 'Origin',
     'Content-Type': 'application/json',
   };
 
   if (event.httpMethod === 'OPTIONS') {
-    return { statusCode: 200, headers, body: '' };
+    return { statusCode: allowed ? 200 : 403, headers, body: '' };
   }
 
   if (event.httpMethod !== 'POST') {
     return { statusCode: 405, headers, body: JSON.stringify({ error: 'Method not allowed' }) };
   }
 
+  if (!allowed) {
+    return { statusCode: 403, headers, body: JSON.stringify({ error: 'Forbidden' }) };
+  }
+
   try {
     const { messages } = JSON.parse(event.body);
 
     if (!Array.isArray(messages) || messages.length === 0) {
+      return { statusCode: 400, headers, body: JSON.stringify({ error: 'Invalid request' }) };
+    }
+
+    const valid = messages.every(
+      (m) => m && (m.role === 'user' || m.role === 'assistant') &&
+        typeof m.content === 'string' && m.content.length > 0 &&
+        m.content.length <= (m.role === 'user' ? MAX_USER_CHARS : MAX_ASSISTANT_CHARS)
+    );
+    if (!valid) {
       return { statusCode: 400, headers, body: JSON.stringify({ error: 'Invalid request' }) };
     }
 
