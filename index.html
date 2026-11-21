@@ -409,6 +409,9 @@
     /* ── RESPONSIVE ── */
     .about-bio { margin-top: 64px; padding-top: 48px; border-top: 1px solid var(--sand); }
     .about-bio h3 { font-family: var(--serif); font-size: 26px; color: var(--deep); margin-bottom: 8px; }
+    .about-bio-head { display: flex; gap: 32px; align-items: center; margin-bottom: 32px; }
+    .about-bio-head .about-bio-intro { margin-bottom: 0; }
+    .about-photo { width: 160px; height: 160px; border-radius: 50%; object-fit: cover; flex-shrink: 0; border: 4px solid var(--sand); }
     .about-bio-intro { font-size: 16px; color: #4a4a4a; line-height: 1.8; max-width: 720px; margin-bottom: 32px; }
     .career { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 20px 48px; padding: 0; margin: 0 0 32px; }
     .career li { border-left: 3px solid var(--sand); padding-left: 16px; }
@@ -435,6 +438,7 @@
     @media (max-width: 540px) {
       .who-list { grid-template-columns: 1fr; }
       .career { grid-template-columns: 1fr; }
+      .about-bio-head { flex-direction: column; align-items: flex-start; }
       .who-item:nth-last-child(-n+2) { border-bottom: 1px solid var(--sand); }
       .who-item:last-child { border-bottom: none; }
       .hero-ctas { flex-direction: column; }
@@ -890,7 +894,10 @@
       <div class="about-bio fade">
         <span class="eyebrow">Background</span>
         <h3>27 years of building software for real businesses.</h3>
-        <p class="about-bio-intro">Before White Oak AI, I spent my career building and running technology for working companies: retail, aviation, logistics, pharmaceuticals and more. I've led engineering teams, managed IT for a 300-person company, and written the software myself. I now bring that same practical experience to local businesses on the Crystal Coast.</p>
+        <div class="about-bio-head">
+          <img class="about-photo" src="ricky-jones.jpg" width="160" height="160" alt="Ricky Jones, founder of White Oak AI" loading="lazy">
+          <p class="about-bio-intro">Before White Oak AI, I spent my career building and running technology for working companies: retail, aviation, logistics, pharmaceuticals and more. I've led engineering teams, managed IT for a 300-person company, and written the software myself. I now bring that same practical experience to local businesses on the Crystal Coast.</p>
+        </div>
         <ul class="career">
           <li><div class="career-role">Director of IT Development</div><div class="career-org">TransImpact &middot; 2022&ndash;2026</div><div class="career-desc">Led onshore and offshore teams building a demand planning application.</div></li>
           <li><div class="career-role">Director of Engineering</div><div class="career-org">Grover Gaming &middot; 2020&ndash;2022</div><div class="career-desc">Led a team of developers building new systems and modernizing legacy ones.</div></li>
