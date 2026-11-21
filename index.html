@@ -26,7 +26,7 @@
     "image": "https://white-oak-ai.com/og-image.png",
     "description": "Practical AI tools and training for Crystal Coast small businesses.",
     "email": "hello@white-oak-ai.com",
-    "founder": { "@type": "Person", "name": "Ricky Jones" },
+    "founder": { "@type": "Person", "name": "Ricky Jones", "jobTitle": "Founder", "sameAs": ["https://www.linkedin.com/in/rickyjonesus/"] },
     "address": { "@type": "PostalAddress", "addressLocality": "Swansboro", "addressRegion": "NC", "addressCountry": "US" },
     "areaServed": "Crystal Coast, NC",
     "sameAs": ["https://www.facebook.com/profile.php?id=61591201550804"]
@@ -407,6 +407,17 @@
     }
 
     /* ── RESPONSIVE ── */
+    .about-bio { margin-top: 64px; padding-top: 48px; border-top: 1px solid var(--sand); }
+    .about-bio h3 { font-family: var(--serif); font-size: 26px; color: var(--deep); margin-bottom: 8px; }
+    .about-bio-intro { font-size: 16px; color: #4a4a4a; line-height: 1.8; max-width: 720px; margin-bottom: 32px; }
+    .career { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 20px 48px; padding: 0; margin: 0 0 32px; }
+    .career li { border-left: 3px solid var(--sand); padding-left: 16px; }
+    .career-role { font-weight: 600; color: var(--deep); font-size: 16px; }
+    .career-org { font-size: 14px; color: var(--tidal); font-weight: 500; }
+    .career-desc { font-size: 14px; color: #5a5a5a; line-height: 1.6; margin-top: 4px; }
+    .about-links { display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: center; font-size: 15px; }
+    .about-links a { color: var(--tidal); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+
     @media (max-width: 1024px) {
       .hero-inner { grid-template-columns: 1fr; }
       .hero-visual { display: none; }
@@ -423,6 +434,7 @@
     }
     @media (max-width: 540px) {
       .who-list { grid-template-columns: 1fr; }
+      .career { grid-template-columns: 1fr; }
       .who-item:nth-last-child(-n+2) { border-bottom: 1px solid var(--sand); }
       .who-item:last-child { border-bottom: none; }
       .hero-ctas { flex-direction: column; }
@@ -875,6 +887,25 @@
           </div>
         </div>
       </div>
+      <div class="about-bio fade">
+        <span class="eyebrow">Background</span>
+        <h3>27 years of building software for real businesses.</h3>
+        <p class="about-bio-intro">Before White Oak AI, I spent my career building and running technology for working companies: retail, aviation, logistics, pharmaceuticals and more. I've led engineering teams, managed IT for a 300-person company, and written the software myself. I now bring that same practical experience to local businesses on the Crystal Coast.</p>
+        <ul class="career">
+          <li><div class="career-role">Director of IT Development</div><div class="career-org">TransImpact &middot; 2022&ndash;2026</div><div class="career-desc">Led onshore and offshore teams building a demand planning application.</div></li>
+          <li><div class="career-role">Director of Engineering</div><div class="career-org">Grover Gaming &middot; 2020&ndash;2022</div><div class="career-desc">Led a team of developers building new systems and modernizing legacy ones.</div></li>
+          <li><div class="career-role">CIO</div><div class="career-org">flyExclusive &middot; 2015&ndash;2020</div><div class="career-desc">Ran IT for a 300+ employee company, including cloud infrastructure on Azure, custom software and a fleet of 160+ iPads.</div></li>
+          <li><div class="career-role">Application Support Manager</div><div class="career-org">MBM Corporation &middot; 2013&ndash;2015</div><div class="career-desc">Built logistics software and led an application support team.</div></li>
+          <li><div class="career-role">MIS Supervisor</div><div class="career-org">McRae and Associates &middot; 2013</div><div class="career-desc">Led IT for 55+ restaurant and convenience locations, including PCI security compliance.</div></li>
+          <li><div class="career-role">Director of Application Development</div><div class="career-org">Delta Private Jets &middot; 2010&ndash;2013</div><div class="career-desc">Led developers and owned software architecture for the company.</div></li>
+          <li><div class="career-role">Senior Software Engineer</div><div class="career-org">Segrave Aviation &middot; 2008&ndash;2010</div><div class="career-desc">Built an on-demand charter quoting system and the company website.</div></li>
+          <li><div class="career-role">Software Developer IV</div><div class="career-org">H&amp;A Scientific &middot; 2001&ndash;2008</div><div class="career-desc">Developed software for large pharmaceutical companies.</div></li>
+        </ul>
+        <div class="about-links">
+          <span>Also serving as a Planning Board Member for the Town of Peletier.</span>
+          <a href="https://www.linkedin.com/in/rickyjonesus/" target="_blank" rel="noopener">See my full LinkedIn profile &rarr;</a>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -907,6 +938,16 @@
             <div>
               <div class="contact-label">Facebook</div>
               <div class="contact-val">White Oak AI</div>
+            </div>
+          </a>
+
+          <a href="https://www.linkedin.com/in/rickyjonesus/" target="_blank" rel="noopener" class="contact-item">
+            <div class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </div>
+            <div>
+              <div class="contact-label">LinkedIn</div>
+              <div class="contact-val">Ricky Jones</div>
             </div>
           </a>
 
