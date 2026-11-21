@@ -418,6 +418,10 @@
     .career-role { font-weight: 600; color: var(--deep); font-size: 16px; }
     .career-org { font-size: 14px; color: var(--tidal); font-weight: 500; }
     .career-desc { font-size: 14px; color: #5a5a5a; line-height: 1.6; margin-top: 4px; }
+    .edu { margin: 0 0 32px; }
+    .edu h4 { font-family: var(--serif); font-size: 20px; color: var(--deep); margin-bottom: 12px; }
+    .edu ul { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 20px 48px; }
+    .edu li { border-left: 3px solid var(--tidal); padding-left: 16px; }
     .about-links { display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: center; font-size: 15px; }
     .about-links a { color: var(--tidal); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
 
@@ -437,7 +441,7 @@
     }
     @media (max-width: 540px) {
       .who-list { grid-template-columns: 1fr; }
-      .career { grid-template-columns: 1fr; }
+      .career, .edu ul { grid-template-columns: 1fr; }
       .about-bio-head { flex-direction: column; align-items: flex-start; }
       .who-item:nth-last-child(-n+2) { border-bottom: 1px solid var(--sand); }
       .who-item:last-child { border-bottom: none; }
@@ -908,6 +912,13 @@
           <li><div class="career-role">Senior Software Engineer</div><div class="career-org">Segrave Aviation &middot; 2008&ndash;2010</div><div class="career-desc">Built an on-demand charter quoting system and the company website.</div></li>
           <li><div class="career-role">Software Developer IV</div><div class="career-org">H&amp;A Scientific &middot; 2001&ndash;2008</div><div class="career-desc">Developed software for large pharmaceutical companies.</div></li>
         </ul>
+        <div class="edu">
+          <h4>Education</h4>
+          <ul>
+            <li><div class="career-role">Master of Technology, Computer/Information Technology Administration and Management</div><div class="career-org">East Carolina University &middot; In progress, expected 2028</div></li>
+            <li><div class="career-role">Bachelor&rsquo;s degree, Computer Science</div><div class="career-org">East Carolina University &middot; 1995&ndash;1999</div></li>
+          </ul>
+        </div>
         <div class="about-links">
           <span>Also serving as a Planning Board Member for the Town of Peletier.</span>
           <a href="https://www.linkedin.com/in/rickyjonesus/" target="_blank" rel="noopener">See my full LinkedIn profile &rarr;</a>
