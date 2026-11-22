@@ -34,6 +34,9 @@ ul { list-style: none; }
 .badge { display: inline-block; margin-top: 32px; padding: 14px 28px; border: 1px solid rgba(253,252,250,0.45);
          border-radius: 4px; font-size: 14px; letter-spacing: 0.5px; color: var(--cream); }
 .badge strong { color: var(--sand); }
+.store-badge { display: inline-block; margin-top: 32px; line-height: 0; }
+.store-badge img { display: block; height: auto; }
+.store-note { margin-top: 12px; font-size: 14px; color: rgba(253,252,250,0.7); }
 
 /* sections */
 .section { padding: 80px 0; }
