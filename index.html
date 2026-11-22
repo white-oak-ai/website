@@ -99,7 +99,7 @@
     .nav-toggle.open span:nth-child(1) { transform: rotate(45deg) translate(4.7px, 4.7px); }
     .nav-toggle.open span:nth-child(2) { opacity: 0; }
     .nav-toggle.open span:nth-child(3) { transform: rotate(-45deg) translate(4.7px, -4.7px); }
-    .nav-drawer { display: none; position: fixed; top: var(--nav-h); left: 0; right: 0;
+    .nav-drawer { display: none; position: fixed; top: var(--nav-h); left: 0; right: 0; z-index: 99;
                   background: var(--cream); padding: 24px 28px 32px;
                   box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-top: 1px solid var(--sand); }
     .nav-drawer.open { display: block; }
@@ -1012,6 +1012,7 @@
       <a href="/ai-in-action/" class="footer-link">AI in Action</a>
       <a href="/projects/" class="footer-link">Apps &amp; Projects</a>
       <a href="/localspots/" class="footer-link">LocalSpots AI app</a>
+      <a href="/aviation/" class="footer-link">Aviation Demand Planning</a>
       <a href="mailto:hello@white-oak-ai.com" class="footer-link">hello@white-oak-ai.com</a>
     </div>
   </footer>
