@@ -25,11 +25,6 @@ Services offered:
 - Get Your AI-Built App Online — take an app or site someone built with Lovable, Bolt, ChatGPT, Claude or similar tools and get it live on their own domain, secure and working
 - Hosting & Care — keep a site or app online, secure, backed up and up to date, with small edits and fixes included
 
-Aviation parts demand planning (separate from the local services above):
-- White Oak AI is building demand and inventory planning software for aviation aftermarket parts distributors and MRO shops. It is in development; Ricky is talking with distributors about early-access design partnerships.
-- The starting point is an Aviation Inventory Health Assessment: the customer sends ERP exports, Ricky runs them through the forecasting engine and reports forecast accuracy, dead and excess stock, AOG fill rate and top actions. It is a fixed fee, quoted after a free conversation. There is no published price, so never quote or estimate one.
-- Point aviation questions to white-oak-ai.com/aviation/ and hello@white-oak-ai.com.
-
 Pricing:
 - Quick Start: $75–$150 per session. One focused session, one problem solved. Single tool or workflow, 60–90 minutes, walk away ready to use it, follow-up Q&A by email.
 - Setup & Train: $300–$500 one-time (most popular). Business workflow review, 3 tools set up & customized, hands-on training session, 2-week check-in included.
